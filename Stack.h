@@ -18,11 +18,19 @@ class Stack {
           }
         return output;
     }
+    friend inline void swap(Stack &lhs,Stack &rhs){
+        std::swap(lhs.m_top,rhs.m_top);
+        std::swap(lhs.m_capacity,rhs.m_capacity);
+        std::swap(lhs.m_stackPtr,rhs.m_stackPtr);
+      }
 public:
+    //rule 3
     Stack():m_stackPtr(nullptr),m_top(-1),m_capacity(0){}
-    //Stack(const Stack&);
+    Stack(const Stack&);
+    Stack &operator=(const Stack &);
 
-    ~Stack(){delete[] m_stackPtr;
+    ~Stack(){
+        delete[] m_stackPtr;
         m_stackPtr= nullptr;
         m_top=0;
         m_capacity=0;
@@ -111,6 +119,25 @@ T Stack<T>::pop() {
     tmpPtr= nullptr;
     return tmp;
 }
+
+template<typename T>
+Stack<T>::Stack(const Stack &other) {
+    m_top = other.m_top;
+    m_capacity = other.m_capacity;
+    m_stackPtr = new T[other.m_capacity];
+    assert(m_stackPtr);
+    for (int i = 0; i < m_capacity; ++i) {
+        m_stackPtr[i] = other.m_stackPtr[i];
+    }
+}
+
+template<typename T>
+Stack<T> & Stack<T>::operator=(const Stack &other) {
+    Stack<T> tmp(other);
+    swap(*this,tmp);
+    return *this;
+}
+
 
 
 #endif //LOGGING_STACK_STACK_H

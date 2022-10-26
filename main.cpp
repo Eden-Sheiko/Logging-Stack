@@ -13,6 +13,12 @@ int main() {
     stack.pop();
     stack.pop();
     std::cout << stack;
+    Stack<int>stack2(stack);
+    std::cout << "--------------"  << std::endl;
+    std::cout << stack2;
+    std::cout << "--------------"  << std::endl;
+    std::cout << &stack << " " << &stack2 << std::endl;
+
 
     return 0;
 }
