@@ -3,4 +3,4 @@ project(Logging_Stack)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Logging_Stack main.cpp)
+add_executable(Logging_Stack main.cpp Stack.cpp Stack.h tests.cpp)

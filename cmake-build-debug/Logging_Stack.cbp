@@ -82,7 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.cpp">
+			<Option target="Logging_Stack"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.h">
+			<Option target="Logging_Stack"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Logging-Stack/main.cpp">
+			<Option target="Logging_Stack"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Logging-Stack/tests.cpp">
 			<Option target="Logging_Stack"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Logging-Stack/CMakeLists.txt">

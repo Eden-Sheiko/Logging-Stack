@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include "Stack.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Stack<int>s1;
+    std::cout << s1.isEmpty();
     return 0;
 }

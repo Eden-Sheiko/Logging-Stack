@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.cpp" "CMakeFiles/Logging_Stack.dir/Stack.cpp.o" "gcc" "CMakeFiles/Logging_Stack.dir/Stack.cpp.o.d"
   "/mnt/c/Users/Eden/CLionProjects/Logging-Stack/main.cpp" "CMakeFiles/Logging_Stack.dir/main.cpp.o" "gcc" "CMakeFiles/Logging_Stack.dir/main.cpp.o.d"
+  "/mnt/c/Users/Eden/CLionProjects/Logging-Stack/tests.cpp" "CMakeFiles/Logging_Stack.dir/tests.cpp.o" "gcc" "CMakeFiles/Logging_Stack.dir/tests.cpp.o.d"
   )
 
 # Targets to which this target links.

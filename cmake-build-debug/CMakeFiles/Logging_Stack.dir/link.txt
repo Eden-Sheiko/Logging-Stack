@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/Logging_Stack.dir/main.cpp.o -o Logging_Stack 
+/usr/bin/c++ -g CMakeFiles/Logging_Stack.dir/main.cpp.o CMakeFiles/Logging_Stack.dir/Stack.cpp.o CMakeFiles/Logging_Stack.dir/tests.cpp.o -o Logging_Stack 
