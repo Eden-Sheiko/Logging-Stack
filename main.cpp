@@ -20,5 +20,15 @@ int main() {
     std::cout << &stack << " " << &stack2 << std::endl;
 
 
+    stack2.push(33);
+    stack2.push(55);
+    std::cout << "--------------"  << std::endl;
+    stack = stack2;
+    std::cout << stack;
+    std::cout << "--------------"  << std::endl;
+    std::cout << stack2;
+    std::cout << "--------------"  << std::endl;
+    std::cout << &stack << " " << &stack2 << std::endl;
+
     return 0;
 }

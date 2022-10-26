@@ -24,10 +24,39 @@ class Stack {
         std::swap(lhs.m_stackPtr,rhs.m_stackPtr);
       }
 public:
-    //rule 3
-    Stack():m_stackPtr(nullptr),m_top(-1),m_capacity(0){}
+    //rule 3   ->  to rule 5
+    Stack():m_stackPtr(nullptr),m_top(-1),m_capacity(0)
+    {}
     Stack(const Stack&);
     Stack &operator=(const Stack &);
+
+    Stack(Stack &&other) noexcept
+    : m_stackPtr(nullptr),m_capacity(0),m_top(0){
+        m_stackPtr=other.m_stackPtr;
+        m_capacity=other.m_capacity;
+        m_top=other.m_top;
+
+        m_stackPtr = nullptr;
+        m_capacity = 0;
+        m_top = 0;
+
+        //*this = std::move(other)
+    }
+    Stack& operator=(Stack &&other) noexcept{
+        if(this!=&other)
+        {
+            delete[] m_stackPtr;
+
+            m_stackPtr=other.m_stackPtr;
+            m_capacity=other.m_capacity;
+            m_top=other.m_top;
+
+            m_stackPtr = nullptr;
+            m_capacity = 0;
+            m_top = 0;
+        }
+        return *this;
+    }
 
     ~Stack(){
         delete[] m_stackPtr;
