@@ -7,6 +7,7 @@
 #include <iostream>
 #include <cassert>
 #include <cstring>
+#include <fstream>
 
 template <typename T>
 class Stack {
@@ -40,7 +41,7 @@ public:
         m_capacity = 0;
         m_top = 0;
 
-        //*this = std::move(other)
+        //*this = std::move(other) better way?
     }
     Stack& operator=(Stack &&other) noexcept{
         if(this!=&other)
@@ -73,6 +74,10 @@ public:
     T pop();
     bool isEmpty()const;
     std::size_t size()const;
+
+    //serialization
+    static void save(std::ostream &out,const Stack &);
+    T load(std::istream &in);
 
 private:
     T *m_stackPtr {};
@@ -167,6 +172,11 @@ Stack<T> & Stack<T>::operator=(const Stack &other) {
     return *this;
 }
 
+template<typename T>
+void Stack<T>::save(std::ostream &out, const Stack &obj) {
+
+    file.write()
+}
 
 
 #endif //LOGGING_STACK_STACK_H
