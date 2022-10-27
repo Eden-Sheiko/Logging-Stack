@@ -33,7 +33,12 @@ class Stack {
         return out;
     }
     friend inline std::istream &read(std::istream &in,Stack<T> &obj){
-
+        in.read((char*)&obj.m_capacity,sizeof(obj.m_capacity));
+        in.read((char*)&obj.m_top,sizeof(obj.m_top));
+        for (auto i = 0; i <obj.m_top; ++i) {
+            in.read((char*)&obj.m_stackPtr[i],sizeof(*obj.m_stackPtr));
+        }
+        return in;
     }
 public:
     //rule 3   ->  to rule 5

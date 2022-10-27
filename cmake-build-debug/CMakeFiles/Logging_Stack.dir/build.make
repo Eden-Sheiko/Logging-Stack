@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Eden/CLionProjects/Logging-Stack
+CMAKE_SOURCE_DIR = /mnt/c/Users/edens/CLionProjects/Logging-Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Logging_Stack.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/Logging_Stack.dir/progress.make
 include CMakeFiles/Logging_Stack.dir/flags.make
 
 CMakeFiles/Logging_Stack.dir/main.cpp.o: CMakeFiles/Logging_Stack.dir/flags.make
-CMakeFiles/Logging_Stack.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Logging-Stack/main.cpp
+CMakeFiles/Logging_Stack.dir/main.cpp.o: /mnt/c/Users/edens/CLionProjects/Logging-Stack/main.cpp
 CMakeFiles/Logging_Stack.dir/main.cpp.o: CMakeFiles/Logging_Stack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Logging_Stack.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Logging_Stack.dir/main.cpp.o -MF CMakeFiles/Logging_Stack.dir/main.cpp.o.d -o CMakeFiles/Logging_Stack.dir/main.cpp.o -c /mnt/c/Users/Eden/CLionProjects/Logging-Stack/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Logging_Stack.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Logging_Stack.dir/main.cpp.o -MF CMakeFiles/Logging_Stack.dir/main.cpp.o.d -o CMakeFiles/Logging_Stack.dir/main.cpp.o -c /mnt/c/Users/edens/CLionProjects/Logging-Stack/main.cpp
 
 CMakeFiles/Logging_Stack.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Logging_Stack.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Eden/CLionProjects/Logging-Stack/main.cpp > CMakeFiles/Logging_Stack.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/edens/CLionProjects/Logging-Stack/main.cpp > CMakeFiles/Logging_Stack.dir/main.cpp.i
 
 CMakeFiles/Logging_Stack.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Logging_Stack.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Eden/CLionProjects/Logging-Stack/main.cpp -o CMakeFiles/Logging_Stack.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/edens/CLionProjects/Logging-Stack/main.cpp -o CMakeFiles/Logging_Stack.dir/main.cpp.s
 
 CMakeFiles/Logging_Stack.dir/Stack.cpp.o: CMakeFiles/Logging_Stack.dir/flags.make
-CMakeFiles/Logging_Stack.dir/Stack.cpp.o: /mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.cpp
+CMakeFiles/Logging_Stack.dir/Stack.cpp.o: /mnt/c/Users/edens/CLionProjects/Logging-Stack/Stack.cpp
 CMakeFiles/Logging_Stack.dir/Stack.cpp.o: CMakeFiles/Logging_Stack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Logging_Stack.dir/Stack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Logging_Stack.dir/Stack.cpp.o -MF CMakeFiles/Logging_Stack.dir/Stack.cpp.o.d -o CMakeFiles/Logging_Stack.dir/Stack.cpp.o -c /mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Logging_Stack.dir/Stack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Logging_Stack.dir/Stack.cpp.o -MF CMakeFiles/Logging_Stack.dir/Stack.cpp.o.d -o CMakeFiles/Logging_Stack.dir/Stack.cpp.o -c /mnt/c/Users/edens/CLionProjects/Logging-Stack/Stack.cpp
 
 CMakeFiles/Logging_Stack.dir/Stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Logging_Stack.dir/Stack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.cpp > CMakeFiles/Logging_Stack.dir/Stack.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/edens/CLionProjects/Logging-Stack/Stack.cpp > CMakeFiles/Logging_Stack.dir/Stack.cpp.i
 
 CMakeFiles/Logging_Stack.dir/Stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Logging_Stack.dir/Stack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Eden/CLionProjects/Logging-Stack/Stack.cpp -o CMakeFiles/Logging_Stack.dir/Stack.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/edens/CLionProjects/Logging-Stack/Stack.cpp -o CMakeFiles/Logging_Stack.dir/Stack.cpp.s
 
 CMakeFiles/Logging_Stack.dir/tests.cpp.o: CMakeFiles/Logging_Stack.dir/flags.make
-CMakeFiles/Logging_Stack.dir/tests.cpp.o: /mnt/c/Users/Eden/CLionProjects/Logging-Stack/tests.cpp
+CMakeFiles/Logging_Stack.dir/tests.cpp.o: /mnt/c/Users/edens/CLionProjects/Logging-Stack/tests.cpp
 CMakeFiles/Logging_Stack.dir/tests.cpp.o: CMakeFiles/Logging_Stack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Logging_Stack.dir/tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Logging_Stack.dir/tests.cpp.o -MF CMakeFiles/Logging_Stack.dir/tests.cpp.o.d -o CMakeFiles/Logging_Stack.dir/tests.cpp.o -c /mnt/c/Users/Eden/CLionProjects/Logging-Stack/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Logging_Stack.dir/tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Logging_Stack.dir/tests.cpp.o -MF CMakeFiles/Logging_Stack.dir/tests.cpp.o.d -o CMakeFiles/Logging_Stack.dir/tests.cpp.o -c /mnt/c/Users/edens/CLionProjects/Logging-Stack/tests.cpp
 
 CMakeFiles/Logging_Stack.dir/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Logging_Stack.dir/tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Eden/CLionProjects/Logging-Stack/tests.cpp > CMakeFiles/Logging_Stack.dir/tests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/edens/CLionProjects/Logging-Stack/tests.cpp > CMakeFiles/Logging_Stack.dir/tests.cpp.i
 
 CMakeFiles/Logging_Stack.dir/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Logging_Stack.dir/tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Eden/CLionProjects/Logging-Stack/tests.cpp -o CMakeFiles/Logging_Stack.dir/tests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/edens/CLionProjects/Logging-Stack/tests.cpp -o CMakeFiles/Logging_Stack.dir/tests.cpp.s
 
 # Object files for target Logging_Stack
 Logging_Stack_OBJECTS = \
@@ -125,7 +125,7 @@ Logging_Stack: CMakeFiles/Logging_Stack.dir/Stack.cpp.o
 Logging_Stack: CMakeFiles/Logging_Stack.dir/tests.cpp.o
 Logging_Stack: CMakeFiles/Logging_Stack.dir/build.make
 Logging_Stack: CMakeFiles/Logging_Stack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Logging_Stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Logging_Stack"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Logging_Stack.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/Logging_Stack.dir/clean:
 .PHONY : CMakeFiles/Logging_Stack.dir/clean
 
 CMakeFiles/Logging_Stack.dir/depend:
-	cd /mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Eden/CLionProjects/Logging-Stack /mnt/c/Users/Eden/CLionProjects/Logging-Stack /mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug /mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug /mnt/c/Users/Eden/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles/Logging_Stack.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/edens/CLionProjects/Logging-Stack /mnt/c/Users/edens/CLionProjects/Logging-Stack /mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug /mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug /mnt/c/Users/edens/CLionProjects/Logging-Stack/cmake-build-debug/CMakeFiles/Logging_Stack.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Logging_Stack.dir/depend
 
