@@ -11,7 +11,7 @@
 
 template <typename T>
 class Stack {
-      friend inline std::ostream& operator<<(std::ostream& output,const Stack &ref){
+    friend inline std::ostream& operator<<(std::ostream& output,const Stack &ref){
         output << " size: " << ref.size() << "\n";
         output << " is empty?: " << ref.isEmpty() << "\n";
           for (int i = 0; i < ref.size(); ++i) {
@@ -24,6 +24,17 @@ class Stack {
         std::swap(lhs.m_capacity,rhs.m_capacity);
         std::swap(lhs.m_stackPtr,rhs.m_stackPtr);
       }
+    friend inline std::ostream &write(std::ostream &out,Stack<T> &obj){
+        out.write((char*)&obj.m_capacity,sizeof(obj.m_capacity));
+        out.write((char*)&obj.m_top,sizeof(obj.m_top));
+        for (auto i = 0; i <obj.m_top; ++i) {
+            out.write((char*)&obj.m_stackPtr[i],sizeof(*obj.m_stackPtr));
+        }
+        return out;
+    }
+    friend inline std::istream &read(std::istream &in,Stack<T> &obj){
+
+    }
 public:
     //rule 3   ->  to rule 5
     Stack():m_stackPtr(nullptr),m_top(-1),m_capacity(0)
@@ -74,10 +85,6 @@ public:
     T pop();
     bool isEmpty()const;
     std::size_t size()const;
-
-    //serialization
-    static void save(std::ostream &out,const Stack &);
-    T load(std::istream &in);
 
 private:
     T *m_stackPtr {};
@@ -171,12 +178,13 @@ Stack<T> & Stack<T>::operator=(const Stack &other) {
     swap(*this,tmp);
     return *this;
 }
-
-template<typename T>
-void Stack<T>::save(std::ostream &out, const Stack &obj) {
-
-    file.write()
-}
-
-
+//template<typename T>
+//std::ostream &write(std::ostream &out,Stack<T> &obj) {
+//    out.write((char*)&obj.m_capacity,sizeof(obj.m_capacity));
+//    out.write((char*)&obj.m_top,sizeof(obj.m_top));
+//    for (auto i = 0; i <obj.m_top; ++i) {
+//        out.write((char*)&obj.m_stackPtr[i],sizeof(*obj.m_stackPtr));
+//    }
+//    return out;
+//}
 #endif //LOGGING_STACK_STACK_H

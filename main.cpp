@@ -32,7 +32,16 @@ int main() {
     std::cout << &stack3 << " " << &stack2 << std::endl;
 
     //test for streams
-    std::ofstream f{"data.bin",std::ios::binary | std::ios::trunc};
 
+    std::ofstream File;
+    File.open("data", std::ios::app | std::ios::binary); // the file to be written
+    if (File){
+        std::cout << "file exists" << std::endl;
+    }
+    else {
+        std::cout << "file doesn't exist" << std::endl;
+    }
+    write(File, stack3);
+    File.close();
     return 0;
 }
